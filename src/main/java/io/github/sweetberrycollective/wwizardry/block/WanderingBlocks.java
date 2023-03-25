@@ -40,8 +40,8 @@ public class WanderingBlocks {
 		return Registry.register(Registries.BLOCK, WanderingMod.id(id), block);
 	}
 
-	public static <T extends BlockEntity> BlockEntityType<T> registerBlockEntity(String id, BlockEntityType<T> blockEntity) {
-		return Registry.register(Registries.BLOCK_ENTITY_TYPE, WanderingMod.id(id), blockEntity);
+	public static <T extends BlockEntity> void registerBlockEntity(String id, BlockEntityType<T> blockEntity) {
+		Registry.register(Registries.BLOCK_ENTITY_TYPE, WanderingMod.id(id), blockEntity);
 	}
 
 	public static boolean testForSculk(BlockView world, BlockPos pos) {
