@@ -11,6 +11,7 @@ repositories {
 		name = 'TerraformersMC'
 		url = 'https://maven.terraformersmc.com/'
 	}
+	maven { url = 'https://maven.minecraftforge.net/' }
 	exclusiveContent {
 		forRepository {
 			maven {
@@ -32,6 +33,7 @@ dependencies {
 
 	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:6.0.0-beta.2"
 	modImplementation "maven.modrinth:moremcmeta:v1.19.4-3.0.6-fabric"
+	modImplementation "com.terraformersmc:Biolith:0.0.1-alpha.2" // FIXME: remove when QSL supports Overworld biome adding
 }
 
 processResources {

@@ -1,5 +1,6 @@
 package io.github.sweetberrycollective.wwizardry;
 
+import io.github.sweetberrycollective.wwizardry.biome.WanderingBiomes;
 import io.github.sweetberrycollective.wwizardry.block.Sculkable;
 import io.github.sweetberrycollective.wwizardry.block.WanderingBlocks;
 import io.github.sweetberrycollective.wwizardry.datagen.WanderingDatagen;
@@ -92,6 +93,7 @@ public class WanderingMod implements ModInitializer {
 		WanderingItems.init();
 		WanderingRecipes.init();
 		WanderingDatagen.init();
+		WanderingBiomes.init();
 		UseBlockCallback.EVENT.register(WanderingMod::onBlockUse);
 	}
 
